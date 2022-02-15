@@ -11,11 +11,10 @@ body {
 .container {
     width: 768px;
     background: #fff;
-    margin: 0 auto;
+    margin: 80px auto;
     padding: 40px;
     border-radius: 20px;
-    min-height: 100vh;
-    height: fit-content;
+    min-height: 80px;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, .3);
 }
 
@@ -172,8 +171,70 @@ body {
     opacity: .5;
 }
 
-@media (max-with: 425px) {
+@media (max-width: 768px) {
     .container {
         width: auto;
+        margin: 0;
+        min-height: 100vh;
+        padding: 10px;
+        border-radius: 0;
+    }
+    .user-info .profile {
+        width: 70px;
+        height: 70px;
+    }
+    .user-info .user-name {
+        font-size: 1rem;
+    }
+    .header .app-name {
+        font-size: 2rem;
+    }
+    .user-info .user-notif {
+        font-size: .7rem;
+    }
+    .input {
+        width: 70%;
+        height: 30px;
+        padding: 10px;
+        font-size: .7rem;
+    }
+    .filter-todo {
+        width: 40%;
+        height: 30px;
+        padding: 10px;
+        font-size: .7rem;
+        margin-left: 40px;
+    }
+    .add-btn  {
+        height: 30px;
+    }
+    .add-btn i {
+        font-size: 1rem;
+    }
+    .complete-btn{
+        margin-left: 40px;
+    }
+    .complete-btn,.trash-btn {
+        height: 30px;
+        width: 17%;
+        
+    }
+    .todo-item {
+        width: 70%;
+        height: 30px;
+        font-size: .8rem;
+    }
+    .fa-check , .fa-trash {
+        font-size: .8rem;
+    }
+    .todo-list {
+        margin-top: 15px;
+    }
+    .data-info h2, .time-info h4 {
+        font-size: 1.1rem;
+    }
+    .data-info .calendar, .time-info .timer {
+        font-size: .8rem;
+        margin-right: 50px;
     }
 }

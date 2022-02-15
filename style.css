@@ -11,10 +11,11 @@ body {
 .container {
     width: 768px;
     background: #fff;
-    margin: 80px auto;
+    margin: 0 auto;
     padding: 40px;
     border-radius: 20px;
-    height: 1000px;
+    min-height: 100vh;
+    height: fit-content;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, .3);
 }
 
@@ -169,4 +170,10 @@ body {
 .completed {
     text-decoration: line-through;
     opacity: .5;
+}
+
+@media (max-with: 425px) {
+    .container {
+        width: auto;
+    }
 }
